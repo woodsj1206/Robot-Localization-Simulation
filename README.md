@@ -28,27 +28,27 @@ The program assumes that the windy maze is surrounded by obstacles, and the robo
      - The movement uses transitional probability and prediction to calculate the location probabilities after the specified movement action. This is implemented in the Moving function in the Robot class. The Moving function calculates the location probability of each square by using the neighboring squares in the four directions.
 
 **Related Conditions:**
-The program uses the following layout of the windy maze and sequence of actions:
-- **Maze Layout:**
-  - "-" represents walkable spaces.
-  - "X" represents obstacles.
-   ```
-    [- - - - - - -]
-    [- - X X X X -]
-    [- - X - - X -]
-    [- X X - - X -]
-    [- - - - X X -]
-    [- - - - - - -]
-   ```
-- *NOTE: We assume that the maze is surrounded by obstacles.*
+- The program uses the following layout of the windy maze and sequence of actions:
+     - **Maze Layout:**
+       - "-" represents walkable spaces.
+       - "X" represents obstacles.
+        ```
+         [- - - - - - -]
+         [- - X X X X -]
+         [- - X - - X -]
+         [- X X - - X -]
+         [- - - - X X -]
+         [- - - - - - -]
+        ```
+          - *NOTE: We assume that the maze is surrounded by obstacles.*
 
-**Actions:**
-  ```
-  1. Sensing: [0, 0, 0, 1]
-  2. Moving northward
-  3. Sensing: [0, 1, 0, 0]
-  4. Moving eastward
-  5. Sensing: [0, 1, 0, 0]
-  6. Moving eastward
-  7. Sensing: [0, 0, 1, 0]
-```
+     - **Actions:**
+       ```
+       1. Sensing: [0, 0, 0, 1]
+       2. Moving northward
+       3. Sensing: [0, 1, 0, 0]
+       4. Moving eastward
+       5. Sensing: [0, 1, 0, 0]
+       6. Moving eastward
+       7. Sensing: [0, 0, 1, 0]
+       ```
